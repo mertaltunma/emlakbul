@@ -21,6 +21,16 @@ app.use(express.json());
 
 app.use("/api/auth",authRouter);
 
+app.use((err,req,res,next)=>{ 
+    const statuseCode=err.statuseCode || 500;
+    const message=err.message || "Internal Server Error";
+    return res.status(statuseCode).json({
+        success:false,
+        statuseCode:statuseCode,
+        message:message,
+    });
+});
+
 app.listen(port,()=>{
     console.log(`Listenning on port ${port}`);
 });
