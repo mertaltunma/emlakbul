@@ -12,9 +12,9 @@ export default function Header() {
           <FaSearch/>
         </form>
         <ul className="flex gap-3">
-          <Link to="/"><li className="text-slate-400 hover:underline">Anasayfa</li></Link>
           <Link to="/about"><li className="hidden sm:inline text-slate-400 hover:underline">Hakkında</li></Link>
           <Link to="/sign-in"><li className="text-slate-400 hover:underline">Giriş Yap</li></Link>
+          <Link to="/sign-up"><li className="text-slate-400 hover:underline">Hesap Aç</li></Link>
         </ul>
       </div>
     </header>
