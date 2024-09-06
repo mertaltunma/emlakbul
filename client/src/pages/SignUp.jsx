@@ -6,8 +6,8 @@ export default function SignUp() {
       <h1 className="text-3xl text-center font-semibold my-7">Hesap Aç</h1>
       <form className='flex flex-col gap-3'>
         <input type="text" placeholder="Kullanıcı Adı" className='border p-3 rounded-xl' id="username"/>
-        <input type="text" placeholder="E-posta adresi" className='border p-3 rounded-xl' id="username"/>
-        <input type="text" placeholder="Şifre" className='border p-3 rounded-xl' id="username"/>
+        <input type="text" placeholder="E-posta adresi" className='border p-3 rounded-xl' id="email"/>
+        <input type="text" placeholder="Şifre" className='border p-3 rounded-xl' id="password"/>
         <button className='bg-slate-700 text-white p-3 rounded-xl uppercase hover:opacity-90'>Hesap Aç</button>
       </form>
       <div className="flex gap-3 mt-5">
