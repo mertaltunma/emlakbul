@@ -61,7 +61,6 @@ export default function SignUp() {
           <span className="text-blue-800 hover:opacity-70">Giriş Yap</span>
         </Link>
       </div>
-      {error && <p className="text-red-600 mt-5">Farklı kullanıcı adı veya farklı e-posta adresi yazamayı deneyin.</p>}
     </div>
   )
 }
